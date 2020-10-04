@@ -6,8 +6,9 @@ public class MainClassTest extends MainClass {
     @Test
     public void testGetLocalNumber() {
         int expectedValue = 14;
+        int value = this.getLocalNumber();
         Assert.assertTrue(String.format("Ожидалось, что метод getLocalNumber вернет значение равное %s, получили %s",
-                expectedValue, this.getLocalNumber()), this.getLocalNumber() == expectedValue);
+                expectedValue, value), value == expectedValue);
     }
 
     @Test
